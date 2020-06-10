@@ -27,7 +27,7 @@ function winOrLose(userNum, machineNum) {
     result.answer = "You lose";
     count++;
     if (count === 10) {
-      alert("You lost all money dude! go home and eat kimchi!");
+      alert("You lost all money dude! go home and eat kimchi!😜");
       btn.disabled = true;
     }
   }

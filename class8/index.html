@@ -4,12 +4,22 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <main>
-      <h1>NOMAD CASINO</h1>
-      <h3>Generate a number between 0 to <span class="number">???</span></h3>
+    <main class="main">
+      <h1>
+        <i class="fas fa-dollar-sign"></i>NOMAD CASINO ROYAL<i
+          class="fas fa-dollar-sign"
+        ></i>
+      </h1>
+      <h2>Generate a number between 0 to <span class="number">???</span></h2>
       <form class="form">
         <input
           class="casino"
@@ -34,8 +44,10 @@
           <option value="100"></option>
         </datalist>
 
-        <div>
-          <label for="guessId">Guess the number</label>
+        <div class="main2">
+          <label for="guessId" class="label"
+            >Guess the number <i class="fas fa-dice"></i>
+          </label>
           <input
             class="guessNum"
             type="number"
