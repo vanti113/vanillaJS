@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>NOMAD CASINO</h1>
+      <h3>Generate a number between 0 to <span class="number">???</span></h3>
+      <form class="form">
+        <input
+          class="casino"
+          type="range"
+          list="marks"
+          min="0"
+          max="100"
+          value="0"
+          step="1"
+        />
+        <datalist id="marks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+
+        <div>
+          <label for="guessId">Guess the number</label>
+          <input
+            class="guessNum"
+            type="number"
+            min="0"
+            max="100"
+            id="guessId"
+          />
+          <button class="playBtn">Play</button>
+        </div>
+      </form>
+      <div class="guessMesssage"><span></span></div>
+      <div class="resultMessage"><span></span></div>
+      <script src="src/index.js"></script>
+    </main>
+  </body>
+</html>

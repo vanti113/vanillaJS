@@ -1,0 +1,14 @@
+.casino {
+  width: 500px;
+  height: 100px;
+  color: black;
+  cursor: default;
+}
+input[type="range"]::-moz-range-thumb {
+  background-color: green;
+}
+
+#guessId {
+  width: 90px;
+  height: 30px;
+}
