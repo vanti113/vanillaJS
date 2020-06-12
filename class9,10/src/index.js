@@ -14,7 +14,9 @@ function clear() {
   saveNum.first = "";
   saveNum.second = "";
   saveNum.oper = "";
-  input.value = "";
+  // 주의
+  input.valueAsNumber = 0;
+  //
 }
 
 function prepareNxt(result) {
@@ -56,7 +58,7 @@ function operFunc(e) {
       // 두번째 수가 존재한다면
       //첫째 수와 둘째 수를 연산하는 함수를 호출하고 그 리턴 값을 표시하라.
       const result = processCal();
-      input.value = result;
+      input.valueAsNumber = result;
       // saveNum.oper = tempData;
       prepareNxt(result);
     } else {
@@ -76,7 +78,7 @@ function operFunc(e) {
 function equalFunc() {
   if (saveNum.first !== "" && saveNum.second !== "" && saveNum.oper !== "") {
     const result = processCal();
-    input.value = result;
+    input.valueAsNumber = result;
     saveNum.oper = "";
     prepareNxt(result);
   }
@@ -85,13 +87,12 @@ function equalFunc() {
 function numFunc(e) {
   const tempData = e.target.innerText;
 
-  // 조건문을 이용한다. 첫번째 페이즈에서 유저는 첫 수를 입력하고, 그 수는 객체에 저장되어 인풋의 밸류에 나타나게 됨
   if (saveNum.oper === "") {
     saveNum.first += tempData;
-    input.value = saveNum.first;
+    input.valueAsNumber = saveNum.first;
   } else {
     saveNum.second += tempData;
-    input.value = saveNum.second;
+    input.valueAsNumber = saveNum.second;
   }
 
   console.log(

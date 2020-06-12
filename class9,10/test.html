@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" placeholder="0" readonly />
+    <button class="zero">0</button>
+    <button class="one">1</button>
+    <script>
+      const input = document.querySelector("input");
+      const zero = document.querySelector(".zero"),
+        one = document.querySelector(".one");
+
+      const tempObj = {
+        number: 0,
+      };
+
+      function handler(e) {
+        const temp = e.target.innerText;
+        tempObj.number += temp;
+        console.log(tempObj.number);
+        // 저장을 하는 단계에서 인풋의 타입을 텍스트가 아닌 넘버로 설정하고, 저장대상을 밸류에즈넘버로 한다면?
+        input.valueAsNumber = tempObj.number;
+        console.dir(input);
+      }
+      function init() {
+        zero.addEventListener("click", handler);
+        one.addEventListener("click", handler);
+      }
+      init();
+    </script>
+  </body>
+</html>
