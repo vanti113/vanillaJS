@@ -47,7 +47,6 @@ function processCal() {
   saveNum.result = result.toString(); // 나갈때는 문자열로 변환해야 함.
 }
 
-function equalFunc() {}
 function operFunc(e) {
   const tempData = e.target.innerText;
 
