@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDoList</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="center color">
+      <div class="clockPart">
+        <span class="clockPart_time"></span>
+      </div>
+    </header>
+    <section class="section1 center">
+      <div class="welcomePart color">
+        <div class="welcomePart_name center">
+          <span class="name"></span>
+          <button class="nameBtn center"><i class="fas fa-ban"></i></button>
+        </div>
+        <form class="nameForm centerColumn">
+          <h1 class="query"></h1>
+
+          <input class="nameInput" type="text" />
+        </form>
+      </div>
+    </section>
+
+    <div class="toDoPart">
+      <div class="askPart centerColumn">
+        <span>What is your main focus for this week?</span>
+        <form class="toDoForm">
+          <input class="toDoInput" type="text" />
+        </form>
+      </div>
+      <div class="title">
+        <div><span>To-do</span></div>
+        <div><span>Done</span></div>
+      </div>
+      <div class="listPart">
+        <div>
+          <ul class="ToDo"></ul>
+        </div>
+        <div>
+          <ul class="Done"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="weather">
+      <div class="weather_icon"></div>
+      <div class="location"></div>
+    </div>
+
+    <script src="local.js"></script>
+    <script src="user.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+    <script src="bg.js"></script>
+  </body>
+</html>
